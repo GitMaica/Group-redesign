@@ -1,71 +1,56 @@
-body {
+*{
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    padding: 0;
+}
+body{
+    background-image: url(https://images.pexels.com/photos/950241/pexels-photo-950241.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    font-family: poppins;
+    -webkit-background-size: cover;
+    background-size:cover;
+    background-position: center 0;
+    height: 100vh;
 }
 
-a {
-    text-decoration: none;
-}
-
-::placeholder {
-    color: grey;
-    padding-left: 5px;
-    font-size: 18px;
-}
-
-.ja_img {
-    width: 20px;
-    height: 13px;
-    border-radius: 2px;
-}
-
-.govjadiv { 
-    margin-left: 20px;
-}
-
-.govja {
-    color: white;
-    font-size: 16px;
-    font-size: 14px;
-}
-
-
-.linqsA {
-    color: white;
-    margin-right: 19px;    
-    font-weight: 700;
-}
-
-.linqsD {
-    color: white;
-    margin-right: 19px;
-    margin-left: 19px;
-    font-weight: 700;
-}
-
-.linqsM {
-    color: white;
-    margin-right: 108px;
-    margin-left: 19px;
-    font-weight: 700;
-}
-
-.down-arrow {
-    width: 10px;
-    height: 16px;
-    padding: 10px;
-    padding-right: 0px;
-    margin-top: -10px;
-    margin-bottom: -10px;
-}
-
-.topbar {
+.nav ul{
+    list-style: none;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     display: flex;
-    flex-direction: row;
-    height: 55.391px;
-    background-color: #004869;
-    justify-content: right;
+
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 1.5rem;
+    font-weight: bold;
+    transition: all .5s ease;
+
+}
+
+.header{
+    background: deepskyblue;
+    overflow: hidden;
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    width: 1100px;
+    margin:auto
+}
+
+.nav img{
+    width: 120px;
+    height: auto;
+}
+
+.nav ul li a:hover{
+    color: rgb(20, 233, 77);
+    background: #fff;
 }
 
 .vertdiv{
@@ -75,24 +60,12 @@ a {
     margin-inline: 60px;
 }
 
-.linqs {
-    color: white;
+#flag{
+    margin-right: 10px;
+    width: 30px;
+    height: auto;
 }
 
-.sec-bar {
+.gov{
     display: flex;
-    flex-direction: row;
-    height: 116px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    margin-bottom: 10px;
 }
-
-.logoimg {
-    margin-inline: 40px;
-    
-}
-
-.budg {
-    margin-left: 20px;
-}
-
