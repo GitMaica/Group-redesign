@@ -78,7 +78,7 @@ body {
     padding: 9px 12px;
     border: none;
     border-radius: 6px;
-    background-color: #68d468;
+    background-color: #E6B325;
     transition: all 0.18 ease-in-out;
 }
 
@@ -211,10 +211,12 @@ body {
 }
 
 .about-div {
+    width: 90vw;
+    text-align: center;
     margin-top: 10px;
     margin-inline: auto;
-    width: 70vw;
-    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #fff;
 }
 
 .about-div > p {
@@ -327,6 +329,10 @@ body {
     cursor: pointer;
 }
 
+.title-links > h3 {
+    font-size: 20px;
+}
+
 #news-two {
     object-position: 0 0;
 }
@@ -398,24 +404,50 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     width: 180px;
+    margin-top: 40px;
 }
 
-.right-foot span:nth-child(1) {
+.social-links span:nth-child(1) {
     color: #4267B2;
-    font-size: 40px;
+    font-size: 36px;
     cursor: pointer;
 }
 
-.right-foot span:nth-child(2) {
+.social-links span:nth-child(2) {
     color: #1DA1F2;
-    font-size: 40px;
+    font-size: 38px;
     cursor: pointer;
 }
 
-.right-foot span:nth-child(3) {
+.social-links span:nth-child(3) {
     font-size: 40px;
     color: #FF0000;
     cursor: pointer;
+}
+
+.right-foot {
+    display: flex;
+    gap: 60px;
+}
+
+.right-foot > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-foot > div > a {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.right-foot > div > a:hover {
+    text-decoration: underline;
+}
+
+.right-foot > div > h2 {
+    font-size: 25px;
+    font-weight: 700;
 }
 
 .terms-bar {
