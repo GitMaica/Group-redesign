@@ -41,6 +41,7 @@ body {
 .navigation-container {
     display: flex;
     padding: 20px;
+    background-color: #2666CF;
     border-bottom: 1px solid lightgrey;
 
 }
@@ -58,10 +59,12 @@ body {
 .left-side p:nth-child(1) {
     font-size: 15px;
     padding-top: 3px;
+    font-weight: 500;
 }
 
 .left-side p:nth-child(2) {
     font-size: 20px;
+    font-weight: 500;
 }
 
 .right-side {
@@ -73,12 +76,12 @@ body {
 }
 
 .right-side > button {
-    color: #fff;
+    color: #000;
     font-weight: 700;
     padding: 9px 12px;
     border: none;
     border-radius: 6px;
-    background-color: #E6B325;
+    background-color: #fff;
     transition: all 0.18 ease-in-out;
 }
 
@@ -191,7 +194,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 0 -400px;
+    /* object-position: 0 -200px; */
 }
 
 /* =================================================================
@@ -202,7 +205,7 @@ body {
     text-align: center;
     margin: auto;
     padding: 30px 0;
-    background-color: #E6B325;
+    background-color: #fff;    ;
 }
 
 .about-container > h1 {
@@ -211,12 +214,12 @@ body {
 }
 
 .about-div {
-    width: 90vw;
+    width: 70vw;
     text-align: center;
     margin-top: 10px;
     margin-inline: auto;
     padding-bottom: 30px;
-    border-bottom: 2px solid #fff;
+    /* border-bottom: 2px solid #fff; */
 }
 
 .about-div > p {
@@ -230,25 +233,24 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #E6B325;
+    background-color: #2666CF;
     padding: 60px;
-    margin-bottom: 30px;
     gap: 80px;
 }
 
 .possibility {
     position: absolute;
-    inset: 10px 0 0 90px;
+    inset: 10px 0 0 70px;
     margin-block: 20px;
 }
-.possibility::before {
+/* .possibility::before {
     content: '';
     position: absolute;
     inset: 0 0 0 -20px;
     width: 4px;
     height: 30px;
     background-color: #12ca12;
-}
+} */
 
 
 .grid-section > div {
@@ -257,17 +259,21 @@ body {
     height: 248px;
 }
 
-.one,
-.two,
-.three {
+.space {
     margin-top: 40px;
+}
+
+.one {
+    background-image: radial-gradient(#000 50%,#fff);
+    padding: 4px;
+    border-radius: 12px;
 }
 
 .grid-section > div > img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    box-shadow: 0 0 8px #000;
+    /* box-shadow: 0 0 8px #000; */
     border-radius: 12px;
 }
 
@@ -275,7 +281,7 @@ body {
     position: absolute;
     font-size: 25px;
     font-weight: 700;
-    color: white;
+    color: #fff;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -297,6 +303,8 @@ body {
 
 .news-container {
     padding: 0 50px;
+    background-color: #fff;
+    padding-block: 25px;
 
 }
 
@@ -333,6 +341,10 @@ body {
     font-size: 20px;
 }
 
+.title-link > a {
+    color: #1DA1F2;
+}
+
 #news-two {
     object-position: 0 0;
 }
@@ -360,10 +372,10 @@ body {
 }
 
 .button-wrapper > button {
-    color: #fff;
+    color: #000;
     font-weight: 700;
     padding: 8px 15px;
-    background-color: #E6B325;
+    background: none;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -380,11 +392,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 50px 160px;
+    padding: 50px 100px;
     width: 100%;
     height: 350px;
-    margin-top: 25px;
-    background-color: #68d468;
+    background-color: #F5F2E7
+    ;
 }
 
 .footer-logo {
@@ -397,6 +409,28 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.contact-info> h2 {
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.contact-info > p {
+    font-size: 18px;
+}
+
+.middle-foot {
+    margin: auto;
+}
+
+.middle-foot> h2 {
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.middle-foot > p {
+    font-size: 18px;
 }
 
 .social-links {
@@ -425,17 +459,9 @@ body {
     cursor: pointer;
 }
 
-.right-foot {
-    display: flex;
-    gap: 60px;
-}
-
-.right-foot > div {
-    display: flex;
-    flex-direction: column;
-}
 
 .right-foot > div > a {
+    color: #000;
     font-size: 18px;
     font-weight: 500;
     margin-top: 15px;
@@ -452,14 +478,18 @@ body {
 
 .terms-bar {
     padding: 0 70px;
-    background-color: #68d468;
+    background-color: #2666CF;
 }
 
 .terms-content {
     display: flex;
     height: 100px;
-    background-color: #68d468;
+    background-color: #2666CF;
     align-items: center;
     justify-content: space-between;
-    border-top: 2px solid #fff;
+    /* border-top: 2px solid #fff; */
+}
+
+.terms-privacy > a{
+    color: #000;
 }
